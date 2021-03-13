@@ -18,7 +18,7 @@ For example:
 
 Following special characters should be escaped with backslash while giving as a input. 
 
-!(exclamation) `(backtick) "(double quotes) \(backslash)
+!(exclamation) `(backtick) "(double quotes) \\(backslash)
 
 ```
 \! \` \" \\
@@ -49,15 +49,7 @@ Following special characters will be replaced with corresponding texts.
 Following special characters will be removed
 
 ```
-blank space
+  blank space
 \(backslash)
 '(single quote)
 "(double quotes)
-
-
-
-
-
-
-
-
