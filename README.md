@@ -26,6 +26,16 @@ Following special characters should be escaped with backslash while giving as a 
 
 # Replacement
 
+Following special characters will be removed because it is difficult to manupulate while
+having these on filenames.
+
+```
+  blank space
+\(backslash)
+'(single quote)
+"(double quotes)
+```
+
 Following special characters will be replaced with corresponding texts.
 
 ```
@@ -46,10 +56,15 @@ Following special characters will be replaced with corresponding texts.
 = eq
 ```
 
-Following special characters will be removed
+# Reusability
+
+Script defines a list called replacements. This list can be modified if 
+we want to add new special character or change the replacement text. 
+
+For example add semicolon on the list.End of replacement list addition.  Add following.
 
 ```
-  blank space
-\(backslash)
-'(single quote)
-"(double quotes)
+replacements+=( [";"]=semicoln )
+```
+
+
